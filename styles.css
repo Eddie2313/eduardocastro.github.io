@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #000;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo i {
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+}
+
+.nav-links a {
+  color: #ddd;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background-color: #1b1b1b;
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 600px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-lead {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 18px;
+}
+
+.hero-subtext {
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 700px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: black;
+}
+
+.hero-image-card {
+  flex: 1 1 320px;
+  max-width: 420px;
+  background-color: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* GENERAL SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.section-black {
+  background-color: #000;
+}
+
+.section-dark {
+  background-color: #1b1b1b;
+}
+
+.muted-text {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-box {
+  background-color: #222;
+  border: 1px solid #444;
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.project-card {
+  background-color: white;
+  color: #111;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.badge-warning {
+  background-color: #facc15;
+  color: #111;
+}
+
+.badge-info {
+  background-color: #38bdf8;
+  color: #111;
+}
+
+.badge-gray {
+  background-color: #6b7280;
+  color: white;
+}
+
+/* TABLE */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #111;
+  color: white;
+}
+
+th,
+td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* INTERESTS */
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.interest-card {
+  background-color: #000;
+  border: 1px solid #444;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.interest-card h3 {
+  margin-bottom: 16px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+/* CONTACT */
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .about-grid,
+  .projects-grid,
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+.contact-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-row span {
+  color: rgba(255,255,255,0.75);
+}
+
+
+.interest-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.interest-card h3 {
+  margin-bottom: 12px;
+}
+
+.interest-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interest-list li {
+  padding: 6px 0;
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid #222;
+}
+
+.interest-list li:last-child {
+  border-bottom: none;
+}
+
+.interest-card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
