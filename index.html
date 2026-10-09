@@ -3,133 +3,204 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Eduardo Castro is a Computer Engineering student at UTRGV interested in robotics, computer vision, and software.">
-  <meta name="theme-color" content="#0b1424">
-  <title>Eduardo Castro | Computer Engineering Student</title>
+  <meta name="description" content="Eduardo Castro, Computer Engineering student at UTRGV. Projects in robotics, computer vision, embedded systems, and backend development.">
+  <meta name="theme-color" content="#f4f1ea">
+  <title>Eduardo Castro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a class="brand" href="#top">Eduardo Castro</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
+  <header class="site-header">
+    <div class="page">
+      <h1>Eduardo Castro</h1>
+      <p class="intro">Computer Engineering student at the University of Texas Rio Grande Valley, graduating December 2027. I work on robots, computer vision, embedded controllers, and the backend code that ties things together. Currently an AI Fellow at the RGV AI Hub and taking a deep learning course on medical imaging.</p>
+      <ul class="header-links">
+        <li><a href="mailto:eduardo.castro23@icloud.com">eduardo.castro23@icloud.com</a></li>
+        <li><a href="https://github.com/Eddie2313">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/eduardo-castro-34a1ba385">LinkedIn</a></li>
+        <li><a href="Eduardo_Castro_Resume.pdf">Résumé (PDF)</a></li>
+      </ul>
+      <nav class="section-nav" aria-label="Sections">
         <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <a href="#coursework">Coursework</a>
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main id="main">
-    <header class="hero" id="top">
-      <div class="container hero-inner">
-        <p class="eyebrow">COMPUTER ENGINEERING STUDENT · UTRGV</p>
-        <h1>Hi, I'm Eduardo.</h1>
-        <p class="hero-intro">I'm a Computer Engineering student interested in robotics, computer vision, and building useful software. This is a place to share what I've worked on and what I'm learning.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">See my projects <span aria-hidden="true">↗</span></a>
-          <a class="button button-outline" href="https://www.linkedin.com/in/eduardo-castro-34a1ba385" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        </div>
-        <a class="text-link resume-link" href="Eduardo_Castro_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a>
-      </div>
-    </header>
+  <main id="main" class="page">
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">PROJECTS</p>
-          <h2 id="projects-title">Things I've built</h2>
-          <p>Mostly a mix of hardware, code, and trying to get the two to work together.</p>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>AI Fellow, Backend Engineering Intern</h3>
+          <span class="date">Jul 2026 to present</span>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <p class="project-type">ROBOTICS · COMPUTER VISION</p>
-            <h3>Object-Following Robot</h3>
-            <p>Led an eight-person team building a Raspberry Pi rover that follows a detected object. We trained a YOLOv8 model with 100+ labeled images and added ultrasonic obstacle avoidance.</p>
-            <p class="project-tools">Python · YOLOv8 · Raspberry Pi · ONNX</p>
-          </article>
-          <article class="project-card">
-            <p class="project-type">COMPUTER VISION</p>
-            <h3>Facial Recognition Security System</h3>
-            <p>Built a Raspberry Pi face recognition pipeline. I'm still working on a physical lock and a companion app for entry logs and notifications.</p>
-            <p class="project-tools">Python · OpenCV · Raspberry Pi</p>
-          </article>
-          <article class="project-card">
-            <p class="project-type">EMBEDDED SYSTEMS</p>
-            <h3>Adaptive Embedded Control System</h3>
-            <p>Worked with serial commands, PWM, ADC input, and fault detection on an embedded controller. Used an oscilloscope to check timing and signals.</p>
-            <p class="project-tools">STM32 · C · PWM / ADC</p>
-          </article>
-          <article class="project-card">
-            <p class="project-type">WEB DEVELOPMENT</p>
-            <h3>Club Organizer App</h3>
-            <p>Developed a Django app with accounts, event creation, and event signups for student organizations.</p>
-            <p class="project-tools">Django · HTML / CSS · GitHub</p>
-          </article>
-          <article class="project-card">
-            <p class="project-type">WEB DEVELOPMENT</p>
-            <h3>Focus Timer App</h3>
-            <p>Built a Pomodoro app for tasks, focus sessions, and stats. I also worked on authentication and deployment with PostgreSQL.</p>
-            <p class="project-tools">Django · PostgreSQL · Render</p>
-          </article>
-        </div>
-      </div>
+        <p class="meta">RGV AI Hub, with AVE Frontera</p>
+        <p>Backend for a bilingual (English and Spanish) healthcare career assistant on a university website. Students ask about programs and jobs in the Rio Grande Valley, and the assistant answers using local data instead of whatever the model happens to remember.</p>
+        <ul>
+          <li>Extended a Python/FastAPI backend that connects the site to a locally hosted Qwen model running in LM Studio over REST.</li>
+          <li>Built a retrieval (RAG) pipeline backed by Google Sheets. It searches several data sources, ranks the matching education, healthcare-program, and career records, and puts the relevant ones into the prompt.</li>
+          <li>Added SQLite for structured local storage, and handled conversation context so follow-up questions keep the earlier answer in mind.</li>
+          <li>Set up and debugged the Linux services, environment variables, Google API credentials, and Cloudflare tunnel used to reach the server from outside.</li>
+          <li>Load-tested with four or more concurrent users, comparing reasoning settings, token limits, timeouts, and retries against response latency.</li>
+          <li>Presented live demos to professionals and colleagues, covering how the system works and where it could be used in the community.</li>
+        </ul>
+        <p class="tools">Python, FastAPI, LM Studio, Qwen, Google Sheets API, SQLite, Linux, Cloudflare Tunnel</p>
+      </article>
     </section>
 
-    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
-      <div class="container narrow">
-        <div class="section-heading">
-          <p class="eyebrow">EXPERIENCE</p>
-          <h2 id="experience-title">What I've worked on</h2>
-        </div>
-        <div class="experience-entry">
-          <div class="experience-top">
-            <div>
-              <h3>AI and Backend Engineering Intern</h3>
-              <p class="experience-place">Ave Frontera · RGV AI Hub</p>
-            </div>
-            <span class="experience-date">Summer 2026</span>
-          </div>
-          <p>During my internship with AVE Frontera and the RGV AI Hub, I collaborated with a team on the backend of a bilingual healthcare career assistant. I contributed to its FastAPI and retrieval augmented generation pipeline, which searches education and job data, ranks relevant records, and supplies that context to a locally hosted language model through LM Studio. I also worked on English and Spanish response handling, conversation context, and API testing to make answers more relevant and useful for follow-up questions. The project gave me hands-on experience connecting data retrieval, AI inference, and production-facing API design while working closely with other developers.</p>
-        </div>
-      </div>
+    <section id="coursework" aria-labelledby="coursework-title">
+      <h2 id="coursework-title">Coursework</h2>
+      <p class="section-note">Fall 2026, in progress</p>
+      <ul class="courses">
+        <li>
+          <h3>Deep Learning Algorithms for Medical Imaging</h3>
+          <p>We're starting the semester project now. Mine is a deep learning model that classifies the different types of lymphoma.</p>
+        </li>
+        <li>
+          <h3>Object-Oriented Programming in Java</h3>
+          <p>Learning object-oriented design in Java. On my own time I'm applying the same ideas in Python, which is what most of my projects use.</p>
+        </li>
+        <li>
+          <h3>Software Engineering II</h3>
+          <p>Focused on application design, following Software Engineering I.</p>
+        </li>
+        <li>
+          <h3>Signals and Systems</h3>
+        </li>
+        <li>
+          <h3>Systems Programming</h3>
+        </li>
+      </ul>
+      <p class="completed"><strong>Completed:</strong> Algorithms and Data Structures, Software Engineering I, Microcontrollers and Embedded Systems Lab, Microprocessor Systems, Electronics I, Electric Circuits I, Digital Systems Engineering I, Probability and Statistics for ECE, Differential Equations, Computer Science I and II.</p>
     </section>
 
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow">ABOUT</p>
-          <h2 id="about-title">A little about me</h2>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Object-Following Robot</h3>
+          <span class="date">Nov 2025 to May 2026</span>
         </div>
-        <div class="about-copy">
-          <p>I'm studying Computer Engineering at the University of Texas Rio Grande Valley in Edinburg, with graduation expected in Fall 2027. I like hands-on projects where I can learn both the software and hardware sides.</p>
-          <p>I'm also an IEEE Student Branch Project Director, where I help student project teams plan and troubleshoot their work.</p>
-          <div class="skills-line"><strong>Some tools I've used</strong><span>Python, C++, FastAPI, Django, OpenCV, Raspberry Pi, STM32, Git, Pytorch, and Linux.</span></div>
+        <p class="meta">Team lead, 8 people</p>
+        <p>A Raspberry Pi rover that finds a target object with a camera, drives toward it, and steers around walls and obstacles on its own.</p>
+        <ul>
+          <li>Collected and labeled 100+ images, trained a YOLOv8 model to recognize the target, and exported it to ONNX so it could run on the Pi.</li>
+          <li>Wrote the Python perception and motor-control loop. The robot only commits to a target after several consecutive detections, which cut down on false positives and made tracking steadier.</li>
+          <li>Added ultrasonic sensors for obstacle and wall avoidance.</li>
+          <li>Worked on circuit design and soldering, deployed over SSH, and debugged the full system on hardware.</li>
+        </ul>
+        <p class="tools">Python, YOLOv8, ONNX, Raspberry Pi, ultrasonic sensors, Linux</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Facial Recognition Security System</h3>
+          <span class="date">Jun 2026 to present</span>
         </div>
-      </div>
+        <p class="meta">Personal project, in progress</p>
+        <p>A door-entry system on a Raspberry Pi that recognizes known visitors from a camera feed.</p>
+        <ul>
+          <li>Built the pipeline for collecting face images, computing facial encodings, and running recognition in real time with OpenCV and face_recognition.</li>
+          <li>Organized labeled datasets per user and serialized the encodings, so training is repeatable and the system can tell known visitors from unknown ones.</li>
+          <li>Next: a physical lock driven by the recognition result, and a React Native app that shows entry logs and sends notifications.</li>
+        </ul>
+        <p class="tools">Python, OpenCV, face_recognition, Raspberry Pi, React Native (planned)</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Adaptive Embedded Control System</h3>
+          <span class="date">May 2026</span>
+        </div>
+        <p class="meta">STM32 microcontroller, written in C</p>
+        <p>A controller with a manual mode that takes serial commands and an autonomous mode that drives outputs from sensor input.</p>
+        <ul>
+          <li>Parsed serial commands without blocking, using a circular receive buffer.</li>
+          <li>Generated PWM with hardware timers and read a potentiometer through the ADC, with a low-pass filter to smooth the input before making control decisions.</li>
+          <li>Added fault-detection states, and checked timing and signals on an oscilloscope during testing.</li>
+        </ul>
+        <p class="tools">C, STM32, UART, PWM, ADC, hardware timers, oscilloscope</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Focus Timer</h3>
+          <span class="date">Apr 2026 to Jul 2026</span>
+        </div>
+        <p class="meta">Django web app, deployed on Render. <a href="https://github.com/Eddie2313/Focus-Flow">Source on GitHub</a></p>
+        <p>A Pomodoro app with timers, a task list, focus-session tracking, stats, and per-user settings.</p>
+        <ul>
+          <li>Implemented user authentication.</li>
+          <li>Moved production data from SQLite to Neon PostgreSQL so it persists between Render deploys.</li>
+          <li>Used OpenAI Codex for debugging, code review, auth improvements, and writing automated tests.</li>
+        </ul>
+        <p class="tools">Python, Django, PostgreSQL (Neon), SQLite, Render</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Club Organizer</h3>
+          <span class="date">Apr 2026</span>
+        </div>
+        <p class="meta">Team project</p>
+        <p>A Django web app where student organizations post events and members sign up for them.</p>
+        <ul>
+          <li>Built user accounts, event creation, event signup, and a responsive HTML/CSS interface.</li>
+          <li>Coordinated the team through Git/GitHub and Jira, working in Agile sprints.</li>
+        </ul>
+        <p class="tools">Python, Django, HTML/CSS, Git, Jira</p>
+      </article>
     </section>
 
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <p class="eyebrow">CONTACT</p>
-        <h2 id="contact-title">Want to get in touch?</h2>
-        <p>I'm happy to talk about projects, internships, or opportunities to learn.</p>
-        <div class="contact-links">
-          <a href="mailto:eduardo.castro23@icloud.com">Email <span aria-hidden="true">↗</span></a>
-          <a href="https://www.linkedin.com/in/eduardo-castro-34a1ba385" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+    <section id="leadership" aria-labelledby="leadership-title">
+      <h2 id="leadership-title">Leadership and activities</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>IEEE Student Branch, Project Director</h3>
+          <span class="date">Aug 2026 to present</span>
         </div>
-      </div>
+        <p>I help student engineering teams plan their projects, track progress, split up the work, and get unstuck on technical problems.</p>
+        <p class="meta">This semester I'm overseeing three projects:</p>
+        <ul>
+          <li>A team replicating my facial recognition security system.</li>
+          <li>An electrostatic detector circuit.</li>
+          <li>A light-based alarm circuit.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>IEEEXtreme Programming Competition</h3>
+        </div>
+        <p>Competed in the 24-hour international contest, solving data structures and algorithms problems against the clock.</p>
+      </article>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt>
+        <dd>Python, C++, C, HTML/CSS</dd>
+        <dt>AI and vision</dt>
+        <dd>OpenCV, YOLO training, face_recognition, RAG, local LLMs (LM Studio), PyTorch</dd>
+        <dt>Backend and tools</dt>
+        <dd>FastAPI, Django, REST APIs, Google Sheets API, Git/GitHub, Linux, SSH, Cloudflare Tunnel</dd>
+        <dt>Hardware</dt>
+        <dd>Raspberry Pi, STM32, Arduino, PWM/ADC/timers, motor control, soldering, oscilloscope</dd>
+      </dl>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>© 2026 Eduardo Castro</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
+  <footer class="site-footer page">
+    <p>© 2026 Eduardo Castro. This site has no cookies, analytics, or tracking.</p>
   </footer>
 </body>
 </html>
