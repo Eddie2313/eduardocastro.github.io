@@ -4,203 +4,218 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Eduardo Castro, Computer Engineering student at UTRGV. Projects in robotics, computer vision, embedded systems, and backend development.">
-  <meta name="theme-color" content="#f4f1ea">
+  <meta name="theme-color" content="#f3efe6">
   <title>Eduardo Castro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="page">
-      <h1>Eduardo Castro</h1>
-      <p class="intro">Computer Engineering student at the University of Texas Rio Grande Valley, graduating December 2027. I work on robots, computer vision, embedded controllers, and the backend code that ties things together. Currently an AI Fellow at the RGV AI Hub and taking a deep learning course on medical imaging.</p>
+  <div class="layout">
+    <header class="sidebar">
+      <h1>Eduardo<br>Castro</h1>
+      <svg class="trace" viewBox="0 0 240 24" aria-hidden="true">
+        <circle cx="4" cy="12" r="3.5"/>
+        <path d="M8 12 H96 l5 -8 l8 16 l8 -16 l8 16 l8 -16 l8 16 l5 -8 H232"/>
+        <circle cx="236" cy="12" r="3.5"/>
+      </svg>
+      <p class="intro">Computer Engineering student at the University of Texas Rio Grande Valley, graduating December 2027. I build robots, computer vision systems, embedded controllers, and the backend code that ties them together.</p>
+
+      <div class="now">
+        <p class="label">Now</p>
+        <ul>
+          <li>AI Fellow at the RGV AI Hub</li>
+          <li>Training a model to classify lymphoma types</li>
+          <li>Directing IEEE student projects</li>
+        </ul>
+      </div>
+
       <ul class="header-links">
-        <li><a href="mailto:eduardo.castro23@icloud.com">eduardo.castro23@icloud.com</a></li>
+        <li><a href="mailto:eduardo.castro23@icloud.com">Email</a></li>
         <li><a href="https://github.com/Eddie2313">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/eduardo-castro-34a1ba385">LinkedIn</a></li>
         <li><a href="Eduardo_Castro_Resume.pdf">Résumé (PDF)</a></li>
       </ul>
+
       <nav class="section-nav" aria-label="Sections">
-        <a href="#experience">Experience</a>
-        <a href="#coursework">Coursework</a>
-        <a href="#projects">Projects</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#skills">Skills</a>
+        <a href="#experience"><span>01</span>Experience</a>
+        <a href="#coursework"><span>02</span>Coursework</a>
+        <a href="#projects"><span>03</span>Projects</a>
+        <a href="#leadership"><span>04</span>Leadership</a>
+        <a href="#skills"><span>05</span>Skills</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="main" class="page">
-    <section id="experience" aria-labelledby="experience-title">
-      <h2 id="experience-title">Experience</h2>
+    <main id="main">
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title"><span class="num">01</span>Experience</h2>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Jul 2026 to present</p>
           <h3>AI Fellow, Backend Engineering Intern</h3>
-          <span class="date">Jul 2026 to present</span>
-        </div>
-        <p class="meta">RGV AI Hub, with AVE Frontera</p>
-        <p>Backend for a bilingual (English and Spanish) healthcare career assistant on a university website. Students ask about programs and jobs in the Rio Grande Valley, and the assistant answers using local data instead of whatever the model happens to remember.</p>
-        <ul>
-          <li>Extended a Python/FastAPI backend that connects the site to a locally hosted Qwen model running in LM Studio over REST.</li>
-          <li>Built a retrieval (RAG) pipeline backed by Google Sheets. It searches several data sources, ranks the matching education, healthcare-program, and career records, and puts the relevant ones into the prompt.</li>
-          <li>Added SQLite for structured local storage, and handled conversation context so follow-up questions keep the earlier answer in mind.</li>
-          <li>Set up and debugged the Linux services, environment variables, Google API credentials, and Cloudflare tunnel used to reach the server from outside.</li>
-          <li>Load-tested with four or more concurrent users, comparing reasoning settings, token limits, timeouts, and retries against response latency.</li>
-          <li>Presented live demos to professionals and colleagues, covering how the system works and where it could be used in the community.</li>
+          <p class="meta">RGV AI Hub, with AVE Frontera</p>
+          <p>Backend for a <mark>bilingual (English and Spanish) healthcare career assistant</mark> on a university website. Students ask about programs and jobs in the Rio Grande Valley, and the assistant answers using local data instead of whatever the model happens to remember.</p>
+          <ul>
+            <li>Extended a Python/FastAPI backend that connects the site to a locally hosted Qwen model running in LM Studio over REST.</li>
+            <li>Built a retrieval (RAG) pipeline backed by Google Sheets. It searches several data sources, ranks the matching education, healthcare-program, and career records, and puts the relevant ones into the prompt.</li>
+            <li>Added SQLite for structured local storage, and handled conversation context so follow-up questions keep the earlier answer in mind.</li>
+            <li>Set up and debugged the Linux services, environment variables, Google API credentials, and Cloudflare tunnel used to reach the server from outside.</li>
+            <li>Load-tested with <mark>four or more concurrent users</mark>, comparing reasoning settings, token limits, timeouts, and retries against response latency.</li>
+            <li>Presented live demos to professionals and colleagues, covering how the system works and where it could be used in the community.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>Python</li><li>FastAPI</li><li>LM Studio</li><li>Qwen</li><li>Google Sheets API</li><li>SQLite</li><li>Linux</li><li>Cloudflare Tunnel</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="coursework" aria-labelledby="coursework-title">
+        <h2 id="coursework-title"><span class="num">02</span>Coursework</h2>
+        <p class="section-note">Fall 2026, in progress</p>
+        <ul class="courses">
+          <li class="course-feature">
+            <h3>Deep Learning Algorithms for Medical Imaging</h3>
+            <p>We're starting the semester project now. Mine is a deep learning model that <mark>classifies the different types of lymphoma</mark>.</p>
+          </li>
+          <li>
+            <h3>Object-Oriented Programming in Java</h3>
+            <p>Learning object-oriented design in Java. On my own time I'm applying the same ideas in Python, which is what most of my projects use.</p>
+          </li>
+          <li>
+            <h3>Software Engineering II</h3>
+            <p>Focused on application design, following Software Engineering I.</p>
+          </li>
+          <li>
+            <h3>Signals and Systems</h3>
+          </li>
+          <li>
+            <h3>Systems Programming</h3>
+          </li>
         </ul>
-        <p class="tools">Python, FastAPI, LM Studio, Qwen, Google Sheets API, SQLite, Linux, Cloudflare Tunnel</p>
-      </article>
-    </section>
+        <p class="completed"><span class="label">Completed</span>Algorithms and Data Structures, Software Engineering I, Microcontrollers and Embedded Systems Lab, Microprocessor Systems, Electronics I, Electric Circuits I, Digital Systems Engineering I, Probability and Statistics for ECE, Differential Equations, Computer Science I and II.</p>
+      </section>
 
-    <section id="coursework" aria-labelledby="coursework-title">
-      <h2 id="coursework-title">Coursework</h2>
-      <p class="section-note">Fall 2026, in progress</p>
-      <ul class="courses">
-        <li>
-          <h3>Deep Learning Algorithms for Medical Imaging</h3>
-          <p>We're starting the semester project now. Mine is a deep learning model that classifies the different types of lymphoma.</p>
-        </li>
-        <li>
-          <h3>Object-Oriented Programming in Java</h3>
-          <p>Learning object-oriented design in Java. On my own time I'm applying the same ideas in Python, which is what most of my projects use.</p>
-        </li>
-        <li>
-          <h3>Software Engineering II</h3>
-          <p>Focused on application design, following Software Engineering I.</p>
-        </li>
-        <li>
-          <h3>Signals and Systems</h3>
-        </li>
-        <li>
-          <h3>Systems Programming</h3>
-        </li>
-      </ul>
-      <p class="completed"><strong>Completed:</strong> Algorithms and Data Structures, Software Engineering I, Microcontrollers and Embedded Systems Lab, Microprocessor Systems, Electronics I, Electric Circuits I, Digital Systems Engineering I, Probability and Statistics for ECE, Differential Equations, Computer Science I and II.</p>
-    </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title"><span class="num">03</span>Projects</h2>
 
-    <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Nov 2025 to May 2026</p>
           <h3>Object-Following Robot</h3>
-          <span class="date">Nov 2025 to May 2026</span>
-        </div>
-        <p class="meta">Team lead, 8 people</p>
-        <p>A Raspberry Pi rover that finds a target object with a camera, drives toward it, and steers around walls and obstacles on its own.</p>
-        <ul>
-          <li>Collected and labeled 100+ images, trained a YOLOv8 model to recognize the target, and exported it to ONNX so it could run on the Pi.</li>
-          <li>Wrote the Python perception and motor-control loop. The robot only commits to a target after several consecutive detections, which cut down on false positives and made tracking steadier.</li>
-          <li>Added ultrasonic sensors for obstacle and wall avoidance.</li>
-          <li>Worked on circuit design and soldering, deployed over SSH, and debugged the full system on hardware.</li>
-        </ul>
-        <p class="tools">Python, YOLOv8, ONNX, Raspberry Pi, ultrasonic sensors, Linux</p>
-      </article>
+          <p class="meta">Team lead, 8 people</p>
+          <p>A Raspberry Pi rover that finds a target object with a camera, drives toward it, and steers around walls and obstacles on its own.</p>
+          <ul>
+            <li>Collected and labeled <mark>100+ images</mark>, trained a YOLOv8 model to recognize the target, and exported it to ONNX so it could run on the Pi.</li>
+            <li>Wrote the Python perception and motor-control loop. The robot only commits to a target after several consecutive detections, which cut down on false positives and made tracking steadier.</li>
+            <li>Added ultrasonic sensors for obstacle and wall avoidance.</li>
+            <li>Worked on circuit design and soldering, deployed over SSH, and debugged the full system on hardware.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>Python</li><li>YOLOv8</li><li>ONNX</li><li>Raspberry Pi</li><li>Ultrasonic sensors</li><li>Linux</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Jun 2026 to present</p>
           <h3>Facial Recognition Security System</h3>
-          <span class="date">Jun 2026 to present</span>
-        </div>
-        <p class="meta">Personal project, in progress</p>
-        <p>A door-entry system on a Raspberry Pi that recognizes known visitors from a camera feed.</p>
-        <ul>
-          <li>Built the pipeline for collecting face images, computing facial encodings, and running recognition in real time with OpenCV and face_recognition.</li>
-          <li>Organized labeled datasets per user and serialized the encodings, so training is repeatable and the system can tell known visitors from unknown ones.</li>
-          <li>Next: a physical lock driven by the recognition result, and a React Native app that shows entry logs and sends notifications.</li>
-        </ul>
-        <p class="tools">Python, OpenCV, face_recognition, Raspberry Pi, React Native (planned)</p>
-      </article>
+          <p class="meta">Personal project, in progress</p>
+          <p>A door-entry system on a Raspberry Pi that recognizes known visitors from a camera feed.</p>
+          <ul>
+            <li>Built the pipeline for collecting face images, computing facial encodings, and running recognition in real time with OpenCV and face_recognition.</li>
+            <li>Organized labeled datasets per user and serialized the encodings, so training is repeatable and the system can tell known visitors from unknown ones.</li>
+            <li>Next: a physical lock driven by the recognition result, and a React Native app that shows entry logs and sends notifications.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>Python</li><li>OpenCV</li><li>face_recognition</li><li>Raspberry Pi</li><li>React Native (planned)</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">May 2026</p>
           <h3>Adaptive Embedded Control System</h3>
-          <span class="date">May 2026</span>
-        </div>
-        <p class="meta">STM32 microcontroller, written in C</p>
-        <p>A controller with a manual mode that takes serial commands and an autonomous mode that drives outputs from sensor input.</p>
-        <ul>
-          <li>Parsed serial commands without blocking, using a circular receive buffer.</li>
-          <li>Generated PWM with hardware timers and read a potentiometer through the ADC, with a low-pass filter to smooth the input before making control decisions.</li>
-          <li>Added fault-detection states, and checked timing and signals on an oscilloscope during testing.</li>
-        </ul>
-        <p class="tools">C, STM32, UART, PWM, ADC, hardware timers, oscilloscope</p>
-      </article>
+          <p class="meta">STM32 microcontroller, written in C</p>
+          <p>A controller with a manual mode that takes serial commands and an autonomous mode that drives outputs from sensor input.</p>
+          <ul>
+            <li>Parsed serial commands without blocking, using a circular receive buffer.</li>
+            <li>Generated PWM with hardware timers and read a potentiometer through the ADC, with a low-pass filter to smooth the input before making control decisions.</li>
+            <li>Added fault-detection states, and checked timing and signals on an oscilloscope during testing.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>C</li><li>STM32</li><li>UART</li><li>PWM</li><li>ADC</li><li>Hardware timers</li><li>Oscilloscope</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Apr 2026 to Jul 2026</p>
           <h3>Focus Timer</h3>
-          <span class="date">Apr 2026 to Jul 2026</span>
-        </div>
-        <p class="meta">Django web app, deployed on Render. <a href="https://github.com/Eddie2313/Focus-Flow">Source on GitHub</a></p>
-        <p>A Pomodoro app with timers, a task list, focus-session tracking, stats, and per-user settings.</p>
-        <ul>
-          <li>Implemented user authentication.</li>
-          <li>Moved production data from SQLite to Neon PostgreSQL so it persists between Render deploys.</li>
-          <li>Used OpenAI Codex for debugging, code review, auth improvements, and writing automated tests.</li>
-        </ul>
-        <p class="tools">Python, Django, PostgreSQL (Neon), SQLite, Render</p>
-      </article>
+          <p class="meta">Django web app, deployed on Render. <a href="https://github.com/Eddie2313/Focus-Flow">Source on GitHub</a></p>
+          <p>A Pomodoro app with timers, a task list, focus-session tracking, stats, and per-user settings.</p>
+          <ul>
+            <li>Implemented user authentication.</li>
+            <li>Moved production data from SQLite to Neon PostgreSQL so it persists between Render deploys.</li>
+            <li>Used OpenAI Codex for debugging, code review, auth improvements, and writing automated tests.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>Python</li><li>Django</li><li>PostgreSQL (Neon)</li><li>SQLite</li><li>Render</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Apr 2026</p>
           <h3>Club Organizer</h3>
-          <span class="date">Apr 2026</span>
-        </div>
-        <p class="meta">Team project</p>
-        <p>A Django web app where student organizations post events and members sign up for them.</p>
-        <ul>
-          <li>Built user accounts, event creation, event signup, and a responsive HTML/CSS interface.</li>
-          <li>Coordinated the team through Git/GitHub and Jira, working in Agile sprints.</li>
-        </ul>
-        <p class="tools">Python, Django, HTML/CSS, Git, Jira</p>
-      </article>
-    </section>
+          <p class="meta">Team project</p>
+          <p>A Django web app where student organizations post events and members sign up for them.</p>
+          <ul>
+            <li>Built user accounts, event creation, event signup, and a responsive HTML/CSS interface.</li>
+            <li>Coordinated the team through Git/GitHub and Jira, working in Agile sprints.</li>
+          </ul>
+          <ul class="tools" aria-label="Tools">
+            <li>Python</li><li>Django</li><li>HTML/CSS</li><li>Git</li><li>Jira</li>
+          </ul>
+        </article>
+      </section>
 
-    <section id="leadership" aria-labelledby="leadership-title">
-      <h2 id="leadership-title">Leadership and activities</h2>
+      <section id="leadership" aria-labelledby="leadership-title">
+        <h2 id="leadership-title"><span class="num">04</span>Leadership and activities</h2>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
+          <p class="date">Aug 2026 to present</p>
           <h3>IEEE Student Branch, Project Director</h3>
-          <span class="date">Aug 2026 to present</span>
-        </div>
-        <p>I help student engineering teams plan their projects, track progress, split up the work, and get unstuck on technical problems.</p>
-        <p class="meta">This semester I'm overseeing three projects:</p>
-        <ul>
-          <li>A team replicating my facial recognition security system.</li>
-          <li>An electrostatic detector circuit.</li>
-          <li>A light-based alarm circuit.</li>
-        </ul>
-      </article>
+          <p>I help student engineering teams plan their projects, track progress, split up the work, and get unstuck on technical problems.</p>
+          <p class="meta">This semester I'm overseeing three projects:</p>
+          <ul>
+            <li>A team replicating my facial recognition security system.</li>
+            <li>An electrostatic detector circuit.</li>
+            <li>A light-based alarm circuit.</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
+        <article class="entry">
           <h3>IEEEXtreme Programming Competition</h3>
-        </div>
-        <p>Competed in the 24-hour international contest, solving data structures and algorithms problems against the clock.</p>
-      </article>
-    </section>
+          <p>Competed in the 24-hour international contest, solving data structures and algorithms problems against the clock.</p>
+        </article>
+      </section>
 
-    <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <dl class="skills">
-        <dt>Languages</dt>
-        <dd>Python, C++, C, HTML/CSS</dd>
-        <dt>AI and vision</dt>
-        <dd>OpenCV, YOLO training, face_recognition, RAG, local LLMs (LM Studio), PyTorch</dd>
-        <dt>Backend and tools</dt>
-        <dd>FastAPI, Django, REST APIs, Google Sheets API, Git/GitHub, Linux, SSH, Cloudflare Tunnel</dd>
-        <dt>Hardware</dt>
-        <dd>Raspberry Pi, STM32, Arduino, PWM/ADC/timers, motor control, soldering, oscilloscope</dd>
-      </dl>
-    </section>
-  </main>
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title"><span class="num">05</span>Skills</h2>
+        <dl class="skills">
+          <dt>Languages</dt>
+          <dd>Python, C++, C, HTML/CSS</dd>
+          <dt>AI and vision</dt>
+          <dd>OpenCV, YOLO training, face_recognition, RAG, local LLMs (LM Studio), PyTorch</dd>
+          <dt>Backend and tools</dt>
+          <dd>FastAPI, Django, REST APIs, Google Sheets API, Git/GitHub, Linux, SSH, Cloudflare Tunnel</dd>
+          <dt>Hardware</dt>
+          <dd>Raspberry Pi, STM32, Arduino, PWM/ADC/timers, motor control, soldering, oscilloscope</dd>
+        </dl>
+      </section>
 
-  <footer class="site-footer page">
-    <p>© 2026 Eduardo Castro. This site has no cookies, analytics, or tracking.</p>
-  </footer>
+      <footer class="site-footer">
+        <p>© 2026 Eduardo Castro. This site has no cookies, analytics, or tracking.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
