@@ -56,13 +56,13 @@
           <p class="date">Jul 2026 to present</p>
           <h3>AI Fellow, Backend Engineering Intern</h3>
           <p class="meta">RGV AI Hub, with AVE Frontera</p>
-          <p>Backend for a <mark>bilingual (English and Spanish) healthcare career assistant</mark> on a university website. Students ask about programs and jobs in the Rio Grande Valley, and the assistant answers using local data instead of whatever the model happens to remember.</p>
+          <p>Backend for a <strong>bilingual (English and Spanish) healthcare career assistant</strong> on a university website. Students ask about programs and jobs in the Rio Grande Valley, and the assistant answers using local data instead of whatever the model happens to remember.</p>
           <ul>
-            <li>Extended a Python/FastAPI backend that connects the site to a locally hosted Qwen model running in LM Studio over REST.</li>
-            <li>Built a retrieval (RAG) pipeline backed by Google Sheets. It searches several data sources, ranks the matching education, healthcare-program, and career records, and puts the relevant ones into the prompt.</li>
+            <li>Extended a Python/FastAPI backend that connects the site to a <strong>locally hosted Qwen model</strong> running in LM Studio over REST.</li>
+            <li>Built a <strong>retrieval (RAG) pipeline</strong> backed by Google Sheets. It searches several data sources, ranks the matching education, healthcare-program, and career records, and puts the relevant ones into the prompt.</li>
             <li>Added SQLite for structured local storage, and handled conversation context so follow-up questions keep the earlier answer in mind.</li>
             <li>Set up and debugged the Linux services, environment variables, Google API credentials, and Cloudflare tunnel used to reach the server from outside.</li>
-            <li>Load-tested with <mark>four or more concurrent users</mark>, comparing reasoning settings, token limits, timeouts, and retries against response latency.</li>
+            <li>Load-tested with <strong>four or more concurrent users</strong>, comparing reasoning settings, token limits, timeouts, and retries against response latency.</li>
             <li>Presented live demos to professionals and colleagues, covering how the system works and where it could be used in the community.</li>
           </ul>
           <ul class="tools" aria-label="Tools">
@@ -77,7 +77,7 @@
         <ul class="courses">
           <li class="course-feature">
             <h3>Deep Learning Algorithms for Medical Imaging</h3>
-            <p>We're starting the semester project now. Mine is a deep learning model that <mark>classifies the different types of lymphoma</mark>.</p>
+            <p>We're starting the semester project now. Mine is a deep learning model that <strong>classifies the different types of lymphoma</strong>.</p>
           </li>
           <li>
             <h3>Object-Oriented Programming in Java</h3>
@@ -106,8 +106,8 @@
           <p class="meta">Team lead, 8 people</p>
           <p>A Raspberry Pi rover that finds a target object with a camera, drives toward it, and steers around walls and obstacles on its own.</p>
           <ul>
-            <li>Collected and labeled <mark>100+ images</mark>, trained a YOLOv8 model to recognize the target, and exported it to ONNX so it could run on the Pi.</li>
-            <li>Wrote the Python perception and motor-control loop. The robot only commits to a target after several consecutive detections, which cut down on false positives and made tracking steadier.</li>
+            <li>Collected and labeled <strong>100+ images</strong>, trained a <strong>YOLOv8 model</strong> to recognize the target, and exported it to ONNX so it could run on the Pi.</li>
+            <li>Wrote the Python perception and motor-control loop. The robot only commits to a target after <strong>several consecutive detections</strong>, which cut down on false positives and made tracking steadier.</li>
             <li>Added ultrasonic sensors for obstacle and wall avoidance.</li>
             <li>Worked on circuit design and soldering, deployed over SSH, and debugged the full system on hardware.</li>
           </ul>
@@ -122,7 +122,7 @@
           <p class="meta">Personal project, in progress</p>
           <p>A door-entry system on a Raspberry Pi that recognizes known visitors from a camera feed.</p>
           <ul>
-            <li>Built the pipeline for collecting face images, computing facial encodings, and running recognition in real time with OpenCV and face_recognition.</li>
+            <li>Built the pipeline for collecting face images, computing facial encodings, and running <strong>recognition in real time</strong> with OpenCV and face_recognition.</li>
             <li>Organized labeled datasets per user and serialized the encodings, so training is repeatable and the system can tell known visitors from unknown ones.</li>
             <li>Next: a physical lock driven by the recognition result, and a React Native app that shows entry logs and sends notifications.</li>
           </ul>
@@ -137,8 +137,8 @@
           <p class="meta">STM32 microcontroller, written in C</p>
           <p>A controller with a manual mode that takes serial commands and an autonomous mode that drives outputs from sensor input.</p>
           <ul>
-            <li>Parsed serial commands without blocking, using a circular receive buffer.</li>
-            <li>Generated PWM with hardware timers and read a potentiometer through the ADC, with a low-pass filter to smooth the input before making control decisions.</li>
+            <li>Parsed serial commands without blocking, using a <strong>circular receive buffer</strong>.</li>
+            <li>Generated <strong>PWM with hardware timers</strong> and read a potentiometer through the ADC, with a low-pass filter to smooth the input before making control decisions.</li>
             <li>Added fault-detection states, and checked timing and signals on an oscilloscope during testing.</li>
           </ul>
           <ul class="tools" aria-label="Tools">
@@ -153,7 +153,7 @@
           <p>A Pomodoro app with timers, a task list, focus-session tracking, stats, and per-user settings.</p>
           <ul>
             <li>Implemented user authentication.</li>
-            <li>Moved production data from SQLite to Neon PostgreSQL so it persists between Render deploys.</li>
+            <li>Moved production data from SQLite to <strong>Neon PostgreSQL</strong> so it persists between Render deploys.</li>
             <li>Used OpenAI Codex for debugging, code review, auth improvements, and writing automated tests.</li>
           </ul>
           <ul class="tools" aria-label="Tools">
@@ -167,7 +167,7 @@
           <p class="meta">Team project</p>
           <p>A Django web app where student organizations post events and members sign up for them.</p>
           <ul>
-            <li>Built user accounts, event creation, event signup, and a responsive HTML/CSS interface.</li>
+            <li>Built <strong>user accounts, event creation, and event signup</strong>, plus a responsive HTML/CSS interface.</li>
             <li>Coordinated the team through Git/GitHub and Jira, working in Agile sprints.</li>
           </ul>
           <ul class="tools" aria-label="Tools">
@@ -185,7 +185,7 @@
           <p>I help student engineering teams plan their projects, track progress, split up the work, and get unstuck on technical problems.</p>
           <p class="meta">This semester I'm overseeing three projects:</p>
           <ul>
-            <li>A team replicating my facial recognition security system.</li>
+            <li>A team <strong>replicating my facial recognition security system</strong>.</li>
             <li>An electrostatic detector circuit.</li>
             <li>A light-based alarm circuit.</li>
           </ul>
@@ -193,7 +193,7 @@
 
         <article class="entry">
           <h3>IEEEXtreme Programming Competition</h3>
-          <p>Competed in the 24-hour international contest, solving data structures and algorithms problems against the clock.</p>
+          <p>Competed in the <strong>24-hour international contest</strong>, solving data structures and algorithms problems against the clock.</p>
         </article>
       </section>
 
